@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>coundown and quotes application</h1>
+    <h2 id="text"></h2>
+
+    <script>
+        let count = 0;
+        let array = ["kaushal","subhas","smit","dhruv"]
+        setInterval(() => {
+            let text = document.getElementById("text");
+            text.innerText = array[count];
+            count++;
+            if (count == array.length){
+                count = 0;
+
+            }
+        }, 1000)
+    </script>
+</body>
+</html>
